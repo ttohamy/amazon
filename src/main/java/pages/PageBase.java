@@ -16,7 +16,7 @@ protected WebDriver driver;
 
     //wait before interact with element and ignoring some exceptions
     public void waitBeforeInteract(WebDriver driver, By element) {
-        FluentWait wait = new FluentWait(driver).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(1))
+        FluentWait wait = new FluentWait(driver).withTimeout(Duration.ofSeconds(5)).pollingEvery(Duration.ofSeconds(1))
                 .ignoring(NoSuchElementException.class).ignoring(TimeoutException.class).withMessage("Element NOT Found");
         wait.until(ExpectedConditions.presenceOfElementLocated(element));
         wait.until(ExpectedConditions.visibilityOfElementLocated(element));
@@ -29,6 +29,17 @@ protected WebDriver driver;
             System.out.println("Can not click the element :  "+locator.toString()+" " + e.getMessage());
         }
     }
+    public String getText(WebDriver driver , By locator){
+        String text ;
+        try {
+            waitBeforeInteract(driver,locator);
+            text = driver.findElement(locator).getText();
+            return text;
+        }catch (Exception e){
+            System.out.println("Can not get the text from the element :  "+locator.toString()+" " + e.getMessage());
+            return "";
+        }
+    }
     public void addTextToField(WebDriver driver , By locator,String text){
         try {
             waitBeforeInteract(driver,locator);
@@ -36,5 +47,8 @@ protected WebDriver driver;
         }catch (Exception e){
             System.out.println("can not add text to element : "+locator.toString()+" " + e.getMessage());
         }
+    }
+    public boolean isElementContainsText(WebDriver driver , By locator , String text){
+        return getText(driver, locator).contains(text);
     }
 }

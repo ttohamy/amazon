@@ -5,11 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
+import pages.HomePage;
+import pages.LoginPage;
+import utils.ConfigReader;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,6 +17,11 @@ import java.util.Map;
 public class TestBase {
     SoftAssert softAssert;
     public static WebDriver driver;
+    HomePage homePage ;
+    LoginPage loginPage;
+    public static String mobile ;
+    public static String password ;
+
 
     @BeforeClass
     protected void getSoftAssert() {
@@ -50,5 +55,20 @@ public class TestBase {
         driver.manage().window().maximize();
         driver.navigate().to("https://www.amazon.eg/");
     }
+    @BeforeClass
+    public void initObjects(){
+        homePage = new HomePage(driver);
+        loginPage = new LoginPage(driver);
+    }
+    @BeforeClass
+    public void initCreds(){
+       mobile = ConfigReader.getProperty("mobile");
+       password = ConfigReader.getProperty("password");
+    }
+
+//    @AfterClass
+//    public void closeDriver() {
+//        driver.quit();
+//    }
 
 }
