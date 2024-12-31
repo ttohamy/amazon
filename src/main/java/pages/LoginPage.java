@@ -11,17 +11,21 @@ public class LoginPage extends PageBase{
     public LoginPage(WebDriver driver) {
         super(driver);
     }
-    public void addMobileNumber(WebDriver driver , String mobile){
+    public LoginPage addMobileNumber(WebDriver driver , String mobile){
         addTextToField(driver,mobileField,mobile);
+        return this;
     }
-    public void clickContinue(WebDriver driver){
+    public LoginPage clickContinue(WebDriver driver){
         clickElement(driver,continueButton);
+        return this;
     }
-    public void addPassword(WebDriver driver , String password){
+    public LoginPage addPassword(WebDriver driver , String password){
         addTextToField(driver,passwordField,password);
+        return this;
     }
-    public void clickSignInButton(WebDriver driver){
+    public LoginPage clickSignInButton(WebDriver driver){
         clickElement(driver,signInButton);
+        return this;
     }
 
 }

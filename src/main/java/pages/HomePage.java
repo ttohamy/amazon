@@ -8,8 +8,9 @@ public class HomePage extends PageBase{
     public HomePage(WebDriver driver) {
         super(driver);
     }
-    public void openLoginPage(WebDriver driver){
+    public LoginPage openLoginPage(WebDriver driver){
         clickElement(driver,loginButton);
+        return new LoginPage(driver);
     }
 
 
