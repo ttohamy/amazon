@@ -10,7 +10,6 @@ public class LoginTest extends TestBase {
                 .addMobileNumber(driver, mobile)
                 .clickContinue(driver)
                 .addPassword(driver, password)
-                .clickSignInButton(driver)
                 .clickSignInButton(driver);
         softAssert.assertTrue(homePage.isElementContainsText(driver, homePage.loginButton, "Hello, Mohamed"));
         softAssert.assertAll();
