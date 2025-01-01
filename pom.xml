@@ -15,6 +15,18 @@
   </properties>
 
   <dependencies>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.18.2</version> <!-- Or latest available -->
+    </dependency>
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>5.0.9</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
@@ -38,6 +50,12 @@
       <artifactId>javafaker</artifactId>
       <version>1.0.2</version>
     </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.11.0</version>
+    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

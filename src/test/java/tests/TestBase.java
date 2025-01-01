@@ -1,16 +1,20 @@
 package tests;
 
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.PageLoadStrategy;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import pages.*;
+import reports.ExtentManager;
 import utils.ConfigReader;
-
+import org.apache.commons.io.FileUtils;
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -74,6 +78,25 @@ public class TestBase {
     public void initCreds(){
        mobile = ConfigReader.getProperty("mobile");
        password = ConfigReader.getProperty("password");
+    }
+    @AfterMethod
+    public void takeScreenShotOnFailure(ITestResult testResult) throws IOException {
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+        if (testResult.getStatus() == ITestResult.FAILURE) {
+            String currentDir = System.getProperty("user.dir")+"/screenshots/" ;
+            File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(scrFile, new File(currentDir+ testResult.getName() + "-"+formater.format(calendar.getTime()) +".jpg"));
+        }
+    }
+    @BeforeSuite
+    public void beforeSuite() throws IOException {
+        ExtentManager.setExtent();
+    }
+
+    @AfterSuite
+    public void afterSuite() {
+        ExtentManager.endReport();
     }
 
 //    @AfterClass

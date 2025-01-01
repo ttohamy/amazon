@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <documentTitle>TestExecutionReport</documentTitle>
+
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>http</protocol>
+
+        <!-- title of the document -->
+        <reportName>Test Execution Report
+            <![CDATA[
+                <img src='D:/Workspace_Eclipse/ExtentDemo/Logo/ATI.png'/>
+            ]]>
+        </reportName>
+
+        <!-- report name - displayed at top-nav -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+
+                });
+            ]]>
+        </scripts>
+
+
+        <!-- location of charts in the test view -->
+        <!-- top, bottom -->
+        <styles>
+            <![CDATA[
+            .report-name { padding-left: 18px; } .report-name > img { float:
+      left;height: 90%;margin-left: 30px;margin-top: 3px;width: auto; }
+        ]]>
+        </styles>
+
+        <!-- custom javascript -->
+        <testViewChartLocation>bottom</testViewChartLocation>
+
+        <!-- custom styles -->
+        <theme>light</theme>
+    </configuration>
+</extentreports>
