@@ -19,15 +19,18 @@ public class HomePage extends PageBase{
         clickElement(driver,loginButton);
         return new LoginPage(driver);
     }
-    public void openAllMenu(WebDriver driver){
+    public HomePage openAllMenu(WebDriver driver){
         clickElement(driver,burgerMenuButton);
+        return this;
     }
-    public void expandCategories(WebDriver driver){
+    public HomePage expandCategories(WebDriver driver){
         clickElement(driver,seeAllButton);
+        return this;
     }
-    public void clickOnVideoGames(WebDriver driver) throws InterruptedException {
+    public HomePage clickOnVideoGames(WebDriver driver) throws InterruptedException {
         scrollOnElement(driver,burgerMenuScrollableView);
         clickElement(driver,videoGameButton);
+        return this;
     }
     public void clickOnAllVideoGame(WebDriver driver){
         clickElement(driver,allVideoGamesButton);

@@ -24,27 +24,31 @@ public class VideoGamesPage extends PageBase {
         super(driver);
     }
 
-    public void clickFreeShipping(WebDriver driver) {
+    public VideoGamesPage clickFreeShipping(WebDriver driver) {
         clickElement(driver, freeShippingCheckBox);
+        return this;
     }
 
-    public void clickNew(WebDriver driver) throws InterruptedException {
+    public VideoGamesPage clickNew(WebDriver driver) throws InterruptedException {
         scroll(driver);
         clickElement(driver, newButton);
+        return this;
     }
 
-    public void clickSort(WebDriver driver) {
+    public VideoGamesPage clickSort(WebDriver driver) {
         clickElement(driver, sortButton);
+        return this;
     }
 
     public void sortFromHighToLow(WebDriver driver) {
         clickElement(driver, highToLow);
+
     }
     public void openCart(WebDriver driver){
         clickElement(driver,cartButton);
     }
 
-    public void checkPrices(WebDriver driver) {
+    public VideoGamesPage openProductsGreaterThan15(WebDriver driver) {
         // Initialize Product Details Page
         ProductDetailsPage productDetailsPage = new ProductDetailsPage(driver);
         filteredElements = new ArrayList<>();
@@ -94,6 +98,8 @@ public class VideoGamesPage extends PageBase {
         } catch (Exception e) {
             e.printStackTrace(); // Log any errors
         }
+        driver.navigate().refresh();
+        return this;
     }
     public double returnProductsTotal(){
         double totalSum = 0;

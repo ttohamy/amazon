@@ -23,9 +23,9 @@ public class LoginPage extends PageBase{
         addTextToField(driver,passwordField,password);
         return this;
     }
-    public LoginPage clickSignInButton(WebDriver driver){
+    public HomePage clickSignInButton(WebDriver driver){
         clickElement(driver,signInButton);
-        return this;
+        return new HomePage(driver);
     }
 
 }
