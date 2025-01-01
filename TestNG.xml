@@ -7,6 +7,11 @@
     </listeners>
     <test name="Amazon tests">
         <classes>
+            <class name="tests.LoginTest">
+                <methods>
+                    <include name="checkThatTheUserCanLogin"/>
+                </methods>
+            </class>
             <class name="tests.PriceFilterTest">
                 <methods>
                     <include name="checkThatUserCanOpenVideoGamesPage" />
