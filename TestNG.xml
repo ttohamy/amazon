@@ -8,6 +8,9 @@
                     <include name="checkThatUserCanOpenVideoGamesPage" />
                     <include name="checkThatTheUserCanFilter" />
                     <include name="checkThatUserCanSort" />
+                    <include name="checkThatUserCanAddItemsToCart" />
+                    <include name="checkThatUserCanProceedToCheckOut" />
+                    <include name="checkThatUserCanAddNewAddress" />
                 </methods>
             </class>
         </classes>

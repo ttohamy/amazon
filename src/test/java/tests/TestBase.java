@@ -8,9 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.VideoGamesPage;
+import pages.*;
 import utils.ConfigReader;
 
 import java.util.HashMap;
@@ -22,6 +20,9 @@ public class TestBase {
     HomePage homePage ;
     LoginPage loginPage;
     VideoGamesPage videoGamesPage ;
+    ProductDetailsPage productDetailsPage ;
+    CartPage cartPage ;
+    CheckoutPage checkOutPage;
     public static String mobile ;
     public static String password ;
 
@@ -65,6 +66,9 @@ public class TestBase {
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
         videoGamesPage = new VideoGamesPage(driver);
+        productDetailsPage = new ProductDetailsPage(driver);
+        cartPage = new CartPage(driver);
+        checkOutPage = new CheckoutPage(driver);
     }
     @BeforeClass
     public void initCreds(){
