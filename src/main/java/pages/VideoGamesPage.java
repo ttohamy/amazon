@@ -18,6 +18,7 @@ public class VideoGamesPage extends PageBase {
     By price = By.className("a-price-whole");
     By addedToCartText = By.id("sw-atc-details-single-container");
     By cartButton = By.id("nav-cart-count-container");
+    By paginationNextButton = By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[18]/div/div/span/ul/li[4]/span/a");
     private  List<Double> filteredElements ;
 
     public VideoGamesPage(WebDriver driver) {
@@ -92,6 +93,9 @@ public class VideoGamesPage extends PageBase {
                         driver.navigate().back();
                         driver.navigate().back();
                         waitBeforeInteract(driver, price);
+                    }else {
+                        System.out.println("There are no items with price > 15000.0");
+                        clickElement(driver,paginationNextButton);
                     }
                 }
             }

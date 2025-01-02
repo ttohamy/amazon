@@ -46,7 +46,8 @@ mvn clean install
 ```
 This downloads and installs all required dependencies specified in the **pom.xml** file.
 
-### 3. Configure Credentials
+### 3. Configure Credentials 
+#### Since I am using the config.properties file to store critical information, please ensure that you follow these steps
 1. Rename `config-sample.properties` to `config.properties`.
 2. Update the file with your Amazon login credentials.
 
