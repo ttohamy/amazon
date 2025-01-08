@@ -13,7 +13,7 @@ public class VideoGamesPage extends PageBase {
     By freeShippingCheckBox = By.xpath("//*[@id=\"s-refinements\"]/div[2]/ul/li/span/a/div[1]");
     By newButton = By.xpath("//*[@id=\"p_n_condition-type/28071525031\"]/span/a");
     public By resultsHeader = By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[1]/div/span[1]/div/div/h2");
-    public By sortButton = By.xpath("//*[@id=\"search\"]/span/div[2]/h1/div/div[4]/div/div/form/span");
+    public By sortButton = By.xpath("//*[@id=\"search\"]/span/div/h1/div/div[4]/div/div/form/span");
     By highToLow = By.id("s-result-sort-select_2");
     By price = By.className("a-price-whole");
     By addedToCartText = By.id("sw-atc-details-single-container");
