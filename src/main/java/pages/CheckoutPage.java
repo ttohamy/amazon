@@ -34,9 +34,10 @@ public class CheckoutPage extends PageBase{
         addTextToField(driver,mobileNumberText,"015"+faker.number().digits(8));
         addTextToField(driver,streetNameText,fullAddress);
         addTextToField(driver,buildingNameText,faker.address().buildingNumber());
-        addTextToField(driver,cityDropDown,"diarb");
+        selectItemFromDropDownMatchSpecificText(driver , cityDropDown,"diarb ");
         clickElement(driver,selectCityText);
         clickElement(driver,districtDropDown);
+        selectItemFromDropDownMatchSpecificText(driver,districtDropDown,"sas");
         clickElement(driver,selectDistrict);
         addTextToField(driver,nearestLandmark,faker.address().secondaryAddress());
         clickElement(driver,homeOptionRadioButton);
@@ -55,6 +56,18 @@ public class CheckoutPage extends PageBase{
     }
     public boolean isAddressAdded(WebDriver driver){
         return getText(driver,deliverToAddressText).contains(fullAddress) ;
+    }
+    public void selectItemFromDropDownMatchSpecificText(WebDriver driver , By locator ,String text){
+
+        for (char ch : text.toCharArray()) {
+            try {
+                driver.findElement(locator).sendKeys(String.valueOf(ch)); // Send one character
+                Thread.sleep(500); // Small delay for dropdown to react
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
+        }
     }
 
 
