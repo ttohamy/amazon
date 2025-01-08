@@ -4,7 +4,7 @@ package tests;
 import org.testng.annotations.Test;
 
 public class PriceFilterTest extends TestBase {
-    @Test
+    @Test(priority = 0 )
     public void checkThatUserCanOpenVideoGamesPage() throws InterruptedException {
         homePage.openLoginPage(driver)
                 .addMobileNumber(driver, mobile)
@@ -20,7 +20,7 @@ public class PriceFilterTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(priority = 1 , dependsOnMethods = "checkThatUserCanOpenVideoGamesPage")
     public void checkThatTheUserCanFilter() throws InterruptedException {
         videoGamesPage.clickFreeShipping(driver)
                       .clickNew(driver);
@@ -28,7 +28,7 @@ public class PriceFilterTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(priority = 2 , dependsOnMethods = "checkThatTheUserCanFilter")
     public void checkThatUserCanSort() {
         videoGamesPage.clickSort(driver)
                       .sortFromHighToLow(driver);
@@ -36,7 +36,7 @@ public class PriceFilterTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(priority = 3 , dependsOnMethods = "checkThatUserCanSort")
     public void checkThatUserCanAddItemsToCart() {
         videoGamesPage.openProductsGreaterThan15(driver)
                       .openCart(driver);
@@ -45,7 +45,7 @@ public class PriceFilterTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(priority = 4 , dependsOnMethods = "checkThatUserCanAddItemsToCart")
     public void checkThatUserCanProceedToCheckOut() {
         cartPage.proceedToBuy(driver);
         softAssert.assertTrue(driver.getCurrentUrl().contains("checkout"));
@@ -53,7 +53,7 @@ public class PriceFilterTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(priority = 5 , dependsOnMethods = "checkThatUserCanProceedToCheckOut")
     public void checkThatUserCanAddNewAddress() {
         checkOutPage.addNewAddress(driver);
         softAssert.assertTrue(checkOutPage.isAddressAdded(driver));

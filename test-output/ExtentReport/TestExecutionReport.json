@@ -1,6 +1,6 @@
 {
-  "FailedTestCaseCount" : 0,
-  "SkippedTestCaseCount" : 0,
+  "FailedTestCaseCount" : 1,
+  "SkippedTestCaseCount" : 2,
   "TotalTestCaseCount" : 7,
-  "PassedTestCaseCount" : 7
+  "PassedTestCaseCount" : 4
 }

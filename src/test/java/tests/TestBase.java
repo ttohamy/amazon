@@ -99,9 +99,9 @@ public class TestBase {
         ExtentManager.endReport();
     }
 
-    @AfterClass
-    public void closeDriver() {
-        driver.quit();
-    }
+//    @AfterClass
+//    public void closeDriver() {
+//        driver.quit();
+//    }
 
 }

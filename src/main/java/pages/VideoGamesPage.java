@@ -31,7 +31,8 @@ public class VideoGamesPage extends PageBase {
     }
 
     public VideoGamesPage clickNew(WebDriver driver) throws InterruptedException {
-        scroll(driver);
+//        scroll(driver);
+        wheelScroll(driver,newButton);
         clickElement(driver, newButton);
         return this;
     }

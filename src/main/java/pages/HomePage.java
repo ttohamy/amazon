@@ -2,6 +2,9 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.WheelInput;
 
 public class HomePage extends PageBase{
     public By loginButton = By.id("nav-link-accountList");
@@ -28,7 +31,9 @@ public class HomePage extends PageBase{
         return this;
     }
     public HomePage clickOnVideoGames(WebDriver driver) throws InterruptedException {
-        scrollOnElement(driver,burgerMenuScrollableView);
+
+        wheelScroll(driver,burgerMenuScrollableView);
+//        scrollOnElement(driver,burgerMenuScrollableView);
         clickElement(driver,videoGameButton);
         return this;
     }

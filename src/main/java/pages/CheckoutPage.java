@@ -40,11 +40,12 @@ public class CheckoutPage extends PageBase{
         clickElement(driver,selectDistrict);
         addTextToField(driver,nearestLandmark,faker.address().secondaryAddress());
         clickElement(driver,homeOptionRadioButton);
-        try {
-            scrollOnElement(driver,scrollablePopUp);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        wheelScroll(driver,homeOptionRadioButton);
+//        try {
+//            scrollOnElement(driver,scrollablePopUp);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         clickElement(driver,useThisAddressButton);
     }
     public double returnOrderTotalAmount(WebDriver driver){

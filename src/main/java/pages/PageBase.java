@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.WheelInput;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import java.time.Duration;
@@ -72,5 +73,12 @@ protected WebDriver driver;
             System.out.println("Exception !"+locator+" " + e.getMessage());
         }
         return appears;
+    }
+
+    public void wheelScroll(WebDriver driver , By locator){
+    WheelInput.ScrollOrigin scrollOrigin = WheelInput.ScrollOrigin.fromElement(driver.findElement(locator), 0,0 );
+        new Actions(driver)
+                .scrollFromOrigin(scrollOrigin,0, 400)
+                .perform();
     }
 }
