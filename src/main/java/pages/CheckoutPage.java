@@ -62,7 +62,7 @@ public class CheckoutPage extends PageBase{
         for (char ch : text.toCharArray()) {
             try {
                 driver.findElement(locator).sendKeys(String.valueOf(ch)); // Send one character
-                Thread.sleep(500); // Small delay for dropdown to react
+                Thread.sleep(700); // Small delay for dropdown to react
             }catch (Exception e){
                 e.printStackTrace();
             }
