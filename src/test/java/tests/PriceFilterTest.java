@@ -59,5 +59,18 @@ public class PriceFilterTest extends TestBase {
         softAssert.assertTrue(checkOutPage.isAddressAdded(driver));
         softAssert.assertAll();
     }
+    @Test()
+    public void cccc() {
+        homePage.openLoginPage(driver)
+                .addMobileNumber(driver, mobile)
+                .clickContinue(driver)
+                .addPassword(driver, password)
+                .clickSignInButton(driver)
+                .openCart(driver);
+        cartPage.proceedToBuy(driver);
+        checkOutPage.addNewAddress(driver);
+        softAssert.assertTrue(checkOutPage.isAddressAdded(driver));
+        softAssert.assertAll();
+    }
 
 }

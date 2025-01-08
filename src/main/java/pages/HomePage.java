@@ -14,6 +14,7 @@ public class HomePage extends PageBase{
     By burgerMenuDiv = By.id("hmenu-content");
     By burgerMenuScrollableView = By.xpath("//*[@id=\"hmenu-content\"]/ul[1]");
     By allVideoGamesButton = By.xpath("//*[@id=\"hmenu-content\"]/ul[32]/li[3]");
+    By cartButton = By.id("nav-cart-count-container");
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -39,6 +40,9 @@ public class HomePage extends PageBase{
     }
     public void clickOnAllVideoGame(WebDriver driver){
         clickElement(driver,allVideoGamesButton);
+    }
+    public void openCart(WebDriver driver){
+        clickElement(driver,cartButton);
     }
 
 

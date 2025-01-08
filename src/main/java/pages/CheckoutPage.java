@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class CheckoutPage extends PageBase{
     By orderTotalText = By.xpath("//*[@id=\"subtotals-marketplace-table\"]/tbody/tr[5]/td[2]");
@@ -27,16 +28,18 @@ public class CheckoutPage extends PageBase{
     public CheckoutPage(WebDriver driver) {
         super(driver);
     }
-    public void addNewAddress(WebDriver driver){
+    public void addNewAddress(WebDriver driver)  {
         clickElement(driver,changeAddressButton);
         clickElement(driver,addNewAddressButton);
         addTextToField(driver,fullNameText,faker.name().fullName());
         addTextToField(driver,mobileNumberText,"015"+faker.number().digits(8));
         addTextToField(driver,streetNameText,fullAddress);
         addTextToField(driver,buildingNameText,faker.address().buildingNumber());
-        addTextToField(driver,cityDropDown,"diarb");
+//        clickElement(driver,cityDropDown);
+        selectCity(driver , cityDropDown,"diarb ");
         clickElement(driver,selectCityText);
         clickElement(driver,districtDropDown);
+        selectCity(driver,districtDropDown,"sas");
         clickElement(driver,selectDistrict);
         addTextToField(driver,nearestLandmark,faker.address().secondaryAddress());
         clickElement(driver,homeOptionRadioButton);
@@ -56,6 +59,18 @@ public class CheckoutPage extends PageBase{
     }
     public boolean isAddressAdded(WebDriver driver){
         return getText(driver,deliverToAddressText).contains(fullAddress) ;
+    }
+    public void selectCity(WebDriver driver , By locator ,String text){
+
+        for (char ch : text.toCharArray()) {
+            try {
+                driver.findElement(locator).sendKeys(String.valueOf(ch)); // Send one character
+                Thread.sleep(500); // Small delay for dropdown to react
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
+        }
     }
 
 
