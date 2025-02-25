@@ -1,0 +1,58 @@
+2025-02-25 07:56:57.143 [main] INFO  utils.LoggerLoad - logger testing using log4j2
+2025-02-25 07:58:18.012 [main] INFO  utils.LoggerLoad - logger testing using log4j2
+2025-02-25 07:58:18.013 [main] WARN  utils.LoggerLoad - warning ...
+2025-02-25 08:09:27.585 [main] INFO  pages.PageBase - Clicking element : 
+2025-02-25 08:09:34.762 [main] INFO  pages.PageBase - Clicking element : 
+2025-02-25 08:22:37.179 [main] ERROR pages.PageBase - can not click the element :  By.id: nav-link-accountList Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-25 08:22:43.276 [main] ERROR pages.PageBase - can not click the element :  By.id: continue no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [df6a386acae53671ff86904ef6bb18a9, findElement {value=continue, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52544}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52544/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df6a386acae53671ff86904ef6bb18a9
+2025-02-25 08:22:43.280 [main] ERROR pages.PageBase - can not click the element :  By.id: signInSubmit no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [df6a386acae53671ff86904ef6bb18a9, findElement {value=signInSubmit, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52544}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52544/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df6a386acae53671ff86904ef6bb18a9
+2025-02-25 08:24:47.927 [main] INFO  pages.PageBase - clicking element : 
+2025-02-25 08:24:47.928 [main] ERROR pages.PageBase - clicking element : 
+2025-02-25 08:24:55.068 [main] INFO  pages.PageBase - clicking element : 
+2025-02-25 08:24:55.068 [main] ERROR pages.PageBase - clicking element : 
+2025-02-25 08:25:09.338 [main] ERROR pages.PageBase - can not click the element : By.id: signInSubmit Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-25 08:33:29.102 [main] INFO  pages.PageBase - clicking element : 
+2025-02-25 08:33:30.170 [main] INFO  pages.PageBase - clicking element : 
+2025-02-25 08:33:37.364 [main] INFO  pages.PageBase - clicking element : 
+2025-02-25 08:34:54.977 [main] INFO  pages.HomePage - clicking element : 
+2025-02-25 08:34:55.570 [main] INFO  pages.LoginPage - clicking element : 
+2025-02-25 08:35:11.063 [main] ERROR pages.LoginPage - can not click the element : By.id: signInSubmit Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-25 08:39:10.999 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-25 08:39:18.167 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-25 08:39:25.271 [main] ERROR pages.LoginPage - can not click the element : By.id: signInSubmit no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [136ecde96c1fba57514c780bc223cd57, findElement {using=id, value=signInSubmit}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55337}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55337/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 136ecde96c1fba57514c780bc223cd57
+2025-02-25 08:39:38.008 [main] ERROR pages.HomePage - can not click the element : By.id: nav-link-accountList Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-25 08:39:52.242 [main] ERROR pages.LoginPage - can not click the element : By.id: continue Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-25 08:40:06.490 [main] ERROR pages.LoginPage - can not click the element : By.id: signInSubmit Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-25 08:44:20.003 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-25 08:44:20.616 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-25 08:44:21.962 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-02-25 08:51:51.106 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-25 08:51:58.225 [main] WARN  pages.LoginPage - can not add text to element : By.id: ap_email_login org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-25 08:51:58.284 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-25 08:52:05.400 [main] WARN  pages.LoginPage - can not add text to element : By.id: ap_password org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-25 08:52:12.534 [main] WARN  pages.LoginPage - can not click the element : By.id: signInSubmit org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-25 08:52:19.660 [main] WARN  pages.HomePage - can not get the text from the element :  By.id: nav-link-accountList org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)

@@ -1,5 +1,7 @@
 package pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,6 +11,7 @@ import java.util.concurrent.TimeoutException;
 
 public class PageBase {
 protected WebDriver driver;
+protected Logger logger = LogManager.getLogger(this);
     public PageBase(WebDriver driver){
         this.driver = driver;
     }
@@ -24,8 +27,9 @@ protected WebDriver driver;
         try {
             waitBeforeInteract(driver,locator);
             driver.findElement(locator).click();
+            logger.info("clicking element : " + locator.toString());
         }catch (Exception e){
-            System.out.println("Can not click the element :  "+locator.toString()+" " + e.getMessage());
+            logger.warn("can not click the element : "+locator.toString()+" " + e);
         }
     }
     public String getText(WebDriver driver , By locator){
@@ -33,9 +37,10 @@ protected WebDriver driver;
         try {
             waitBeforeInteract(driver,locator);
             text = driver.findElement(locator).getText();
+            logger.info("getting text from filed : "+ locator.toString() + "and the text is : "+text );
             return text;
         }catch (Exception e){
-            System.out.println("Can not get the text from the element :  "+locator.toString()+" " + e.getMessage());
+            logger.warn("can not get the text from the element :  "+locator.toString()+" " + e);
             return "";
         }
     }
@@ -43,8 +48,9 @@ protected WebDriver driver;
         try {
             waitBeforeInteract(driver,locator);
             driver.findElement(locator).sendKeys(text);
+            logger.info("adding text to field : "+locator.toString());
         }catch (Exception e){
-            System.out.println("can not add text to element : "+locator.toString()+" " + e.getMessage());
+            logger.warn("can not add text to element : "+locator.toString()+" " + e);
         }
     }
     public boolean isElementContainsText(WebDriver driver , By locator , String text){
@@ -69,7 +75,7 @@ protected WebDriver driver;
             appears =true;
         }catch (Exception e){
             appears = false;
-            System.out.println("Exception !"+locator+" " + e.getMessage());
+            logger.warn("Exception !"+locator+" " + e);
         }
         return appears;
     }

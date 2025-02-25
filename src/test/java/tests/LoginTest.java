@@ -14,4 +14,9 @@ public class LoginTest extends TestBase {
         softAssert.assertTrue(homePage.isElementContainsText(driver, homePage.loginButton, "Hello, Mohamed"));
         softAssert.assertAll();
     }
+    @Test
+    public void checkLogger(){
+        logger.info("logger testing using log4j2");
+        logger.warn("warning ...");
+    }
 }

@@ -1,5 +1,7 @@
 package tests;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -29,6 +31,7 @@ public class TestBase {
     CheckoutPage checkOutPage;
     public static String mobile ;
     public static String password ;
+    Logger logger = LogManager.getLogger(this);
 
 
     @BeforeClass
@@ -42,7 +45,7 @@ public class TestBase {
 
         if (browserName.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
-            driver.manage().window().setSize(new Dimension(1920, 1080));
+            driver.manage().window().maximize();
 
         }
         else if (browserName.equalsIgnoreCase("firefox")) {
