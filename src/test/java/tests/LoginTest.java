@@ -1,6 +1,7 @@
 package tests;
 
 import org.testng.annotations.Test;
+import utils.RetryAnalyzer;
 
 public class LoginTest extends TestBase {
 
@@ -14,9 +15,12 @@ public class LoginTest extends TestBase {
         softAssert.assertTrue(homePage.isElementContainsText(driver, homePage.loginButton, "Hello, Mohamed"));
         softAssert.assertAll();
     }
-    @Test
+    @Test(retryAnalyzer = RetryAnalyzer.class)
     public void checkLogger(){
-        logger.info("logger testing using log4j2");
-        logger.warn("warning ...");
+        logger.info("Running testExample retry...");
+        // Simulate a flaky test
+        if (0 > 0.5) {
+            throw new RuntimeException("Test failed!");
+    }
     }
 }
