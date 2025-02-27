@@ -113,3 +113,222 @@ Account & Lists
 2025-02-25 14:34:00.769 [main] INFO  tests.LoginTest - Running testExample retry...
 2025-02-25 14:34:00.771 [main] INFO  utils.RetryAnalyzer - Retrying checkLogger (attempt 3)
 2025-02-25 14:34:00.772 [main] INFO  tests.LoginTest - Running testExample retry...
+2025-02-26 06:44:23.454 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-26 06:44:30.582 [main] WARN  pages.LoginPage - can not add text to element : By.id: ap_email_login org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 06:44:30.643 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-26 06:44:37.767 [main] WARN  pages.LoginPage - can not add text to element : By.id: ap_password org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 06:44:44.902 [main] WARN  pages.LoginPage - can not click the element : By.id: signInSubmit org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 06:44:52.813 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-26 06:44:59.955 [main] WARN  pages.LoginPage - can not add text to element : By.id: ap_email_login org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 06:45:00.017 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-26 06:45:07.153 [main] WARN  pages.LoginPage - can not add text to element : By.id: ap_password org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 06:45:14.321 [main] WARN  pages.LoginPage - can not click the element : By.id: signInSubmit org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 06:45:21.479 [main] WARN  pages.HomePage - can not get the text from the element :  By.id: nav-link-accountList org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 06:48:34.084 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-26 06:48:34.170 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-02-26 06:48:34.636 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-26 06:48:35.176 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-02-26 06:48:37.023 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-02-26 06:48:37.053 [main] INFO  pages.HomePage - getting text from filed : By.id: nav-link-accountListand the text is : Hello, Mohamed
+Account & Lists
+2025-02-26 06:48:56.055 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-26 06:48:56.133 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-02-26 06:48:56.702 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-26 06:48:56.754 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-02-26 06:48:58.774 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-02-26 06:48:58.797 [main] INFO  pages.HomePage - getting text from filed : By.id: nav-link-accountListand the text is : Hello, Mohamed
+Account & Lists
+2025-02-26 06:49:39.679 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-26 06:49:39.763 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-02-26 06:49:40.105 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-26 06:49:40.365 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-02-26 06:49:42.627 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-02-26 06:49:42.653 [main] INFO  pages.HomePage - getting text from filed : By.id: nav-link-accountListand the text is : Hello, Mohamed
+Account & Lists
+2025-02-26 06:59:24.640 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-26 06:59:24.723 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-02-26 06:59:25.241 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-26 06:59:25.286 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-02-26 06:59:31.582 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-02-26 06:59:31.607 [main] INFO  pages.HomePage - getting text from filed : By.id: nav-link-accountListand the text is : Hello, Mohamed
+Account & Lists
+2025-02-26 06:59:58.573 [main] WARN  pages.HomePage - can not click the element : By.id: nav-link-accountList org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8803d34e5de43287676b074d285c0b06, findElement {using=id, value=nav-link-accountList}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50504/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8803d34e5de43287676b074d285c0b06
+2025-02-26 06:59:58.579 [main] WARN  pages.LoginPage - can not add text to element : By.name: email org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8803d34e5de43287676b074d285c0b06, findElement {using=name, value=email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50504/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8803d34e5de43287676b074d285c0b06
+2025-02-26 06:59:58.581 [main] WARN  pages.LoginPage - can not click the element : By.id: continue org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8803d34e5de43287676b074d285c0b06, findElement {using=id, value=continue}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50504/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8803d34e5de43287676b074d285c0b06
+2025-02-26 06:59:58.583 [main] WARN  pages.LoginPage - can not click the element : By.id: signInSubmit org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8803d34e5de43287676b074d285c0b06, findElement {using=id, value=signInSubmit}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50504/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8803d34e5de43287676b074d285c0b06
+2025-02-26 06:59:58.585 [main] WARN  pages.HomePage - can not get the text from the element :  By.id: nav-link-accountList org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8803d34e5de43287676b074d285c0b06, findElement {using=id, value=nav-link-accountList}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50504/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8803d34e5de43287676b074d285c0b06
+2025-02-26 07:00:34.293 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-26 07:00:34.374 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-02-26 07:00:35.510 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-26 07:00:35.567 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-02-26 07:00:42.683 [main] WARN  pages.HomePage - can not get the text from the element :  By.id: nav-link-accountList org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 07:02:14.734 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-26 07:02:14.824 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-02-26 07:02:15.325 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-26 07:02:16.313 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-02-26 07:02:23.441 [main] WARN  pages.HomePage - can not get the text from the element :  By.id: nav-link-accountList org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 07:04:13.681 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-26 07:04:13.766 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-02-26 07:04:14.097 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-26 07:04:14.336 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-02-26 07:04:18.515 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-02-26 07:04:18.536 [main] INFO  pages.HomePage - getting text from filed : By.id: nav-link-accountListand the text is : Hello, Mohamed
+Account & Lists
+2025-02-26 07:04:27.732 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-26 07:04:27.831 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-02-26 07:04:29.376 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-26 07:04:29.688 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-02-26 07:04:29.757 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-02-26 07:04:31.843 [main] INFO  pages.HomePage - clicking element : By.id: nav-hamburger-menu
+2025-02-26 07:04:32.922 [main] INFO  pages.HomePage - clicking element : By.xpath: //*[@id="hmenu-content"]/ul[1]/li[14]/a[1]
+2025-02-26 07:04:35.083 [main] INFO  pages.HomePage - clicking element : By.xpath: //*[@id="hmenu-content"]/ul[1]/ul/li[11]/a/div
+2025-02-26 07:04:36.512 [main] INFO  pages.HomePage - clicking element : By.xpath: //*[@id="hmenu-content"]/ul[32]/li[3]
+2025-02-26 07:04:36.531 [main] INFO  pages.HomePage - getting text from filed : By.xpath: //*[@id="a-page"]/div[1]/div[2]/div[1]/div/div/h1/band the text is : Video Games
+2025-02-26 07:04:37.880 [main] INFO  pages.VideoGamesPage - clicking element : By.xpath: //*[@id="s-refinements"]/div[2]/ul/li/span/a/div[1]
+2025-02-26 07:04:39.877 [main] INFO  pages.VideoGamesPage - clicking element : By.xpath: //*[@id="p_n_condition-type/28071525031"]/span/a
+2025-02-26 07:04:39.898 [main] INFO  pages.HomePage - getting text from filed : By.xpath: //*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[1]/div/span[1]/div/div/h2and the text is : Results
+2025-02-26 07:04:39.944 [main] INFO  pages.VideoGamesPage - clicking element : By.xpath: //*[@id="search"]/span/div/h1/div/div[4]/div/div/form/span
+2025-02-26 07:04:40.049 [main] INFO  pages.VideoGamesPage - clicking element : By.id: s-result-sort-select_2
+2025-02-26 07:04:40.074 [main] INFO  pages.VideoGamesPage - getting text from filed : By.xpath: //*[@id="search"]/span/div/h1/div/div[4]/div/div/form/spanand the text is : Sort by:
+        
+            Bestselling
+        
+            Price: Low to High
+        
+            Price: High to Low
+        
+            Avg. Customer Review
+        
+            Release Date
+        
+            Best Sellers
+        
+    Sort by:Price: High to Low
+2025-02-26 07:04:48.169 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: add-to-cart-button
+2025-02-26 07:04:55.295 [main] WARN  pages.ProductDetailsPage - can not click the element : By.id: attachSiNoCoverage org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 07:04:59.451 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: add-to-cart-button
+2025-02-26 07:05:00.557 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: attachSiNoCoverage
+2025-02-26 07:05:07.121 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: add-to-cart-button
+2025-02-26 07:05:08.205 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: attachSiNoCoverage
+2025-02-26 07:05:13.564 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: add-to-cart-button
+2025-02-26 07:05:14.651 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: attachSiNoCoverage
+2025-02-26 07:05:19.748 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: add-to-cart-button
+2025-02-26 07:05:20.835 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: attachSiNoCoverage
+2025-02-26 07:05:26.852 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: add-to-cart-button
+2025-02-26 07:05:27.942 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: attachSiNoCoverage
+2025-02-26 07:05:33.978 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: add-to-cart-button
+2025-02-26 07:05:35.043 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: attachSiNoCoverage
+2025-02-26 07:05:40.788 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: add-to-cart-button
+2025-02-26 07:05:41.860 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: attachSiNoCoverage
+2025-02-26 07:05:48.454 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: add-to-cart-button
+2025-02-26 07:05:49.533 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: attachSiNoCoverage
+2025-02-26 07:05:54.999 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: add-to-cart-button
+2025-02-26 07:05:56.078 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: attachSiNoCoverage
+2025-02-26 07:06:02.284 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: add-to-cart-button
+2025-02-26 07:06:03.365 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: attachSiNoCoverage
+2025-02-26 07:06:08.939 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: add-to-cart-button
+2025-02-26 07:06:10.026 [main] INFO  pages.ProductDetailsPage - clicking element : By.id: attachSiNoCoverage
+2025-02-26 07:06:15.662 [main] INFO  pages.VideoGamesPage - clicking element : By.id: nav-cart-count-container
+2025-02-26 07:06:15.679 [main] INFO  pages.CartPage - getting text from filed : By.id: sc-subtotal-label-buyboxand the text is : Subtotal (16 items):
+2025-02-26 07:06:15.698 [main] INFO  pages.CartPage - getting text from filed : By.id: sc-subtotal-amount-buyboxand the text is :  EGP 345,321.00
+2025-02-26 07:06:20.653 [main] INFO  pages.CartPage - clicking element : By.name: proceedToRetailCheckout
+2025-02-26 07:06:27.896 [main] WARN  pages.CheckoutPage - can not click the element : By.xpath: //*[@id="checkout-deliveryAddressPanel"]/div/div[2]/span/a org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 07:06:35.016 [main] WARN  pages.CheckoutPage - can not click the element : By.id: add-new-address-desktop-sasp-tango-link org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 07:06:43.413 [main] WARN  pages.CheckoutPage - can not add text to element : By.id: address-ui-widgets-enterAddressFullName org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 07:06:50.543 [main] WARN  pages.CheckoutPage - can not add text to element : By.id: address-ui-widgets-enterAddressPhoneNumber org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 07:06:57.668 [main] WARN  pages.CheckoutPage - can not add text to element : By.id: address-ui-widgets-enterAddressLine1 org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 07:07:04.774 [main] WARN  pages.CheckoutPage - can not add text to element : By.id: address-ui-widgets-enter-building-name-or-number org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 07:07:11.911 [main] WARN  pages.CheckoutPage - can not click the element : By.id: address-ui-widgets-autoCompleteResult-1 org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 07:07:19.006 [main] WARN  pages.CheckoutPage - can not click the element : By.id: address-ui-widgets-enterAddressDistrictOrCounty org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 07:07:26.133 [main] WARN  pages.CheckoutPage - can not click the element : By.id: address-ui-widgets-autoCompleteResult-0 org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 07:07:33.258 [main] WARN  pages.CheckoutPage - can not add text to element : By.id: address-ui-widgets-landmark org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 07:07:40.385 [main] WARN  pages.CheckoutPage - can not click the element : By.id: address-ui-widgets-addr-details-res-radio-input org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 08:35:43.036 [main] WARN  pages.HomePage - can not click the element : By.id: nav-link-accountList org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 08:35:50.146 [main] WARN  pages.LoginPage - can not add text to element : By.name: email org.openqa.selenium.TimeoutException: Expected condition failed: Element NOT Found (tried for 7 second(s) with 1000 milliseconds interval)
+2025-02-26 08:35:50.146 [main] INFO  pages.LoginPage - a
+2025-02-26 08:35:54.273 [main] WARN  pages.LoginPage - can not click the element : By.id: continue org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34d20056b2e48b37f02386e8d98293d1, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58061}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58061/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34d20056b2e48b37f02386e8d98293d1
+2025-02-26 08:35:54.275 [main] WARN  pages.LoginPage - can not add text to element : By.id: ap_password org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34d20056b2e48b37f02386e8d98293d1, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58061}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58061/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34d20056b2e48b37f02386e8d98293d1
+2025-02-26 08:35:54.277 [main] WARN  pages.LoginPage - can not click the element : By.id: signInSubmit org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34d20056b2e48b37f02386e8d98293d1, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58061}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58061/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34d20056b2e48b37f02386e8d98293d1
+2025-02-26 08:35:54.277 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-02-26 08:35:54.278 [main] WARN  pages.HomePage - can not get the text from the element :  By.id: nav-link-accountList org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34d20056b2e48b37f02386e8d98293d1, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58061}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58061/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34d20056b2e48b37f02386e8d98293d1
+2025-02-26 08:36:08.103 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-02-26 08:36:08.196 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-02-26 08:36:08.197 [main] INFO  pages.LoginPage - a
+2025-02-26 08:36:09.377 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-02-26 08:36:09.698 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-02-26 08:36:09.765 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-02-26 08:36:09.765 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-02-26 08:36:11.869 [main] INFO  pages.HomePage - getting text from filed : By.id: nav-link-accountListand the text is : Hello, Mohamed
+Account & Lists
+2025-02-26 08:36:28.110 [main] INFO  tests.LoginTest - Running testExample retry...
+2025-02-26 08:36:49.367 [main] INFO  tests.LoginTest - Running testExample retry...
+2025-02-26 08:36:49.396 [main] INFO  utils.RetryAnalyzer - Retrying checkLogger (attempt 1)
+2025-02-26 08:36:49.399 [main] INFO  tests.LoginTest - Running testExample retry...
+2025-02-26 08:36:49.401 [main] INFO  utils.RetryAnalyzer - Retrying checkLogger (attempt 2)
+2025-02-26 08:36:49.403 [main] INFO  tests.LoginTest - Running testExample retry...
+2025-02-26 08:36:49.405 [main] INFO  utils.RetryAnalyzer - Retrying checkLogger (attempt 3)
+2025-02-26 08:36:49.406 [main] INFO  tests.LoginTest - Running testExample retry...

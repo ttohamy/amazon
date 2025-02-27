@@ -44,7 +44,13 @@ public class TestBase {
     public void startDriver(@Optional("chrome") String browserName) {
 
         if (browserName.equalsIgnoreCase("chrome")) {
-            driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            HashMap<String, Boolean> value = new HashMap<>();
+            value.put("credentials_enable_service", false);
+            value.put("profile.password_manager_enabled", false);
+            options.setExperimentalOption("prefs", value);
+            options.addArguments("--disable-features=PasswordSave,PasswordAutofill");
+            driver = new ChromeDriver(options);
             driver.manage().window().maximize();
 
         }
