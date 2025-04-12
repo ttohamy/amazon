@@ -2,11 +2,10 @@ package pages;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class CheckoutPage extends PageBase{
-    By orderTotalText = By.xpath("//*[@id=\"subtotals-marketplace-table\"]/tbody/tr[5]/td[2]");
+    By orderTotalText = By.xpath("///*[@id=\"subtotals-marketplace-table\"]/li[5]/span/div/div[2]");
     By changeAddressButton = By.xpath("//*[@id=\"checkout-deliveryAddressPanel\"]/div/div[2]/span/a");
     By addNewAddressButton = By.id("add-new-address-desktop-sasp-tango-link");
     By fullNameText = By.id("address-ui-widgets-enterAddressFullName");
@@ -22,6 +21,7 @@ public class CheckoutPage extends PageBase{
     By useThisAddressButton = By.xpath("//*[@id=\"pagelet-layout-section\"]/span");
     By scrollablePopUp = By.xpath("//*[@id=\"a-popover-2\"]/div");
     By deliverToAddressText = By.id("deliver-to-address-text");
+    By skipPrimeButton = By.id("prime-declineCTA");
     Faker faker = new Faker();
     String fullAddress = faker.address().fullAddress();
     public CheckoutPage(WebDriver driver) {
@@ -49,6 +49,8 @@ public class CheckoutPage extends PageBase{
         clickElement(driver,useThisAddressButton);
     }
     public double returnOrderTotalAmount(WebDriver driver){
+        waitBeforeInteract(driver,skipPrimeButton);
+        clickElement(driver,skipPrimeButton);
         String text = driver.findElement(orderTotalText).getText().replaceAll(",", "").replaceAll("[^0-9.]", "");
         double itemsPrice = Double.parseDouble(text);
         System.out.println("Checkout page item price : "+itemsPrice);
