@@ -4,7 +4,7 @@ package tests;
 import org.testng.annotations.Test;
 
 public class PriceFilterTest extends TestBase {
-    @Test
+    @Test(priority = 0)
     public void checkThatUserCanOpenVideoGamesPage() throws InterruptedException {
         homePage.openLoginPage(driver)
                 .addMobileNumber(driver, mobile)
@@ -22,7 +22,7 @@ public class PriceFilterTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(dependsOnMethods = "checkThatUserCanOpenVideoGamesPage")
     public void checkThatTheUserCanFilter() throws InterruptedException {
         videoGamesPage.clickFreeShipping(driver)
                       .clickNew(driver);
@@ -33,7 +33,7 @@ public class PriceFilterTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(dependsOnMethods = "checkThatTheUserCanFilter")
     public void checkThatUserCanSort() {
         videoGamesPage.clickSort(driver)
                       .sortFromHighToLow(driver);
@@ -44,7 +44,7 @@ public class PriceFilterTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(dependsOnMethods = "checkThatUserCanSort")
     public void checkThatUserCanAddItemsToCart() {
         videoGamesPage.openProductsGreaterThan15(driver)
                       .openCart(driver);
@@ -55,17 +55,16 @@ public class PriceFilterTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(dependsOnMethods = "checkThatUserCanAddItemsToCart")
     public void checkThatUserCanProceedToCheckOut() {
         cartPage.proceedToBuy(driver);
         logger.info("assert that the current page is checkout page");
         softAssert.assertTrue(driver.getCurrentUrl().contains("checkout"));
-        logger.info("assert that the current page is checkout page");
         softAssert.assertEquals(videoGamesPage.returnProductsTotal(), checkOutPage.returnOrderTotalAmount(driver));
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(dependsOnMethods = "checkThatUserCanProceedToCheckOut")
     public void checkThatUserCanAddNewAddress() {
         checkOutPage.addNewAddress(driver);
         logger.info("assert that success msg 'address added' appears ");
