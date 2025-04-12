@@ -1,0 +1,10 @@
+README.md
+TestNG.xml
+config.properties
+file.txt
+logs
+pom.xml
+screenshots
+src
+target
+test-output
