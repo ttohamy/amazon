@@ -20,6 +20,7 @@ public class ConfigReader {
     }
 
     public static String getProperty(String key) {
+        System.out.println("test make sure that the push done");
         return properties.getProperty(key);
     }
 }
