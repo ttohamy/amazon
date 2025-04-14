@@ -15,7 +15,7 @@ public class ConfigReader {
             properties.load(fis);
         } catch (IOException e) {
             e.printStackTrace();
-            throw new RuntimeException("Failed to load config.properties file.");
+            throw new RuntimeException("Failed to load config.properties file. ");
         }
     }
 
