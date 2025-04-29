@@ -16,6 +16,11 @@ pipeline {
         sh 'docker version'
     }
 }
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/ttohamy/amazon.git' // or use local folder if mounted
+            }
+        }
         stage('Build') {
             steps {
                 echo "Building.."
