@@ -10,7 +10,9 @@ public class ConfigReader {
 
     static {
         try {
-            FileInputStream fis = new FileInputStream("/Users/mohamedeltohamy/.jenkins/workspace/Run Tests From GitHub/config.properties");
+//            FileInputStream fis = new FileInputStream("/Users/mohamedeltohamy/.jenkins/workspace/Run Tests From GitHub/config.properties");
+            FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/config.properties");
+
             properties = new Properties();
             properties.load(fis);
         } catch (IOException e) {
