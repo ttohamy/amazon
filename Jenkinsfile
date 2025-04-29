@@ -1,5 +1,9 @@
 pipeline {
     agent any
+     tools {
+        maven 'Maven 3.9' // This must match the Maven name in Jenkins > Global Tool Configuration
+    }
+
     triggers {
         pollSCM '* * * * *'
     }
