@@ -332,3 +332,15 @@ Account & Lists
 2025-02-26 08:36:49.403 [main] INFO  tests.LoginTest - Running testExample retry...
 2025-02-26 08:36:49.405 [main] INFO  utils.RetryAnalyzer - Retrying checkLogger (attempt 3)
 2025-02-26 08:36:49.406 [main] INFO  tests.LoginTest - Running testExample retry...
+2025-04-29 20:12:00.023 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-29 20:12:00.117 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-29 20:12:00.570 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-29 20:12:01.056 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-29 20:12:01.094 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-29 20:12:01.094 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-29 20:17:55.346 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-29 20:17:55.436 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-29 20:17:55.894 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-29 20:17:56.267 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-29 20:17:58.484 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-29 20:17:58.484 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
