@@ -2,53 +2,27 @@ pipeline {
     agent {
         docker {
             image 'maven:3.9-eclipse-temurin-17'
-            args '-v $HOME/.m2:/root/.m2'
+            args '-v /root/.m2:/root/.m2'
         }
     }
-    
-    triggers {
-        pollSCM '* * * * *'
-    }
-    
+
     stages {
-        stage('Check Docker') {
-    steps {
-        sh 'docker version'
-    }
-}
         stage('Checkout') {
             steps {
                 git 'https://github.com/ttohamy/amazon.git' // or use local folder if mounted
             }
         }
-        stage('Build') {
+
+        stage('Build & Test') {
             steps {
-                echo "Building.."
-                // sh '''
-                // cd myapp
-                // pip install -r requirements.txt
-                // '''
+                sh 'mvn clean test'
             }
         }
-        stage('Test') {
-            steps {
-                echo "Testing.."
-                // sh '''
-                // cd myapp
-                // python3 hello.py
-                // python3 hello.py --name=Brad
-                // '''
-                sh ''' mvn clean test
-                '''
-            }
-        }
-        stage('Deliver') {
-            steps {
-                echo 'Deliver....'
-                sh '''
-                echo "doing delivery stuff.."
-                '''
-            }
+    }
+
+    post {
+        always {
+            junit '**/target/surefire-reports/*.xml'
         }
     }
 }
