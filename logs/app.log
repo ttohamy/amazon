@@ -344,3 +344,9 @@ Account & Lists
 2025-04-29 20:17:56.267 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
 2025-04-29 20:17:58.484 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
 2025-04-29 20:17:58.484 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-29 21:54:28.467 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-29 21:54:28.563 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-29 21:54:29.499 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-29 21:54:29.528 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-29 21:54:29.572 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-29 21:54:29.573 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears

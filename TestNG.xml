@@ -5,7 +5,8 @@
         <listener
                 class-name="reports.ExtentReportListener"/>
     </listeners>
-    <test name="Amazon tests">
+    <parameter name="browserName" value="chrome-headless"/>
+    <test name="Amazon tests" >
         <classes>
             <class name="tests.LoginTest">
                 <methods>
