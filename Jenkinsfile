@@ -1,21 +1,36 @@
 pipeline {
     agent any
-
+    triggers {
+        pollSCM '* * * * *'
+    }
     stages {
-        stage('Build & Test') {
+        stage('Build') {
             steps {
-                script {
-                    docker.image('maven:3.9-eclipse-temurin-17').inside('-v /root/.m2:/root/.m2') {
-                        sh 'mvn clean test'
-                    }
-                }
+                echo "Building.."
+                // sh '''
+                // cd myapp
+                // pip install -r requirements.txt
+                // '''
             }
         }
-    }
-
-    post {
-        always {
-            junit 'target/surefire-reports/*.xml'
+        stage('Test') {
+            steps {
+                echo "Testing.."
+                // sh '''
+                // cd myapp
+                // python3 hello.py
+                // python3 hello.py --name=Brad
+                // '''
+                sh ''' mvn clean test '''
+            }
+        }
+        stage('Deliver') {
+            steps {
+                echo 'Deliver....'
+                sh '''
+                echo "doing delivery stuff.."
+                '''
+            }
         }
     }
 }
