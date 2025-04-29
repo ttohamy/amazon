@@ -21,7 +21,7 @@ pipeline {
                 // python3 hello.py
                 // python3 hello.py --name=Brad
                 // '''
-                sh ''' mvn -X clean test '''
+                sh ''' mvn clean test '''
             }
         }
         stage('Deliver') {
