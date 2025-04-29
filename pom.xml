@@ -109,6 +109,12 @@
       <artifactId>maven-surefire-plugin</artifactId>
       <version>3.5.3</version>
     </dependency>
+    <dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.28</version> <!-- or later -->
+    <scope>provided</scope>
+</dependency>
 
   </dependencies>
 
