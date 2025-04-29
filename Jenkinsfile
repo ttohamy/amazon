@@ -21,8 +21,7 @@ pipeline {
                 // python3 hello.py
                 // python3 hello.py --name=Brad
                 // '''
-                sh ''' ls -ltr > test.txt
-                cat test.txt
+                sh ''' mvn clean test
                 '''
             }
         }
