@@ -1,9 +1,11 @@
 pipeline {
-    agent any
-     tools {
-        maven 'maven 3.9.9' // This must match the Maven name in Jenkins > Global Tool Configuration
+    agent {
+        docker {
+            image 'maven:3.9-eclipse-temurin-17'
+            args '-v $HOME/.m2:/root/.m2'
+        }
     }
-
+    
     triggers {
         pollSCM '* * * * *'
     }
