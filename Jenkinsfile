@@ -9,7 +9,13 @@ pipeline {
     triggers {
         pollSCM '* * * * *'
     }
+    
     stages {
+        stage('Check Docker') {
+    steps {
+        sh 'docker version'
+    }
+}
         stage('Build') {
             steps {
                 echo "Building.."
