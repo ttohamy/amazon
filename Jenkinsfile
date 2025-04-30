@@ -3,6 +3,9 @@ pipeline {
     triggers {
         pollSCM '* * * * *'
     }
+     environment {
+        RECIPIENTS = 'm_eltohamy@outlook.com'
+    }
     stages {
         stage('Build') {
             steps {
@@ -31,6 +34,25 @@ pipeline {
                 echo "doing delivery stuff.."
                 '''
             }
+        }
+    }
+    post {
+        always {
+            emailext(
+                subject: "🚀 Build #${BUILD_NUMBER} - Testing Report",
+                body: """
+                    <p>Hello Team,</p>
+                    <p>The test execution for build <b>#${BUILD_NUMBER}</b> is complete.</p>
+                    <p><b>View the Allure report:</b> <a href="http://your-server.com:5050">Click here</a></p>
+                    <p>Or see the attached report.</p>
+                    <br>
+                    <p>Regards,<br>Jenkins</p>
+                """,
+                mimeType: 'text/html',
+                to: "${env.RECIPIENTS}",
+                attachmentsPattern: 'allure-report.zip',
+                attachLog: true
+            )
         }
     }
 }
