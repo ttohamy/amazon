@@ -24,7 +24,10 @@ pipeline {
                 // python3 hello.py
                 // python3 hello.py --name=Brad
                 // '''
-                sh ''' mvn clean test '''
+                sh ''' mvn clean test
+                 mkdir -p allure-report
+                 allure generate allure-results --clean -o allure-report
+                '''
             }
         }
         stage('Deliver') {
