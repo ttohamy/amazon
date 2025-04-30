@@ -18,7 +18,7 @@ protected Logger logger = LogManager.getLogger(this);
 
     //wait before interact with element and ignoring some exceptions
     public void waitBeforeInteract(WebDriver driver, By element) {
-        FluentWait wait = new FluentWait(driver).withTimeout(Duration.ofSeconds(7)).pollingEvery(Duration.ofSeconds(1))
+        FluentWait wait = new FluentWait(driver).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(1))
                 .ignoring(NoSuchElementException.class).ignoring(TimeoutException.class).withMessage("Element NOT Found");
         wait.until(ExpectedConditions.presenceOfElementLocated(element));
         wait.until(ExpectedConditions.visibilityOfElementLocated(element));

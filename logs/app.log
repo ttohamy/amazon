@@ -350,3 +350,106 @@ Account & Lists
 2025-04-29 21:54:29.528 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
 2025-04-29 21:54:29.572 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
 2025-04-29 21:54:29.573 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-29 22:09:51.986 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-29 22:09:52.074 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-29 22:09:52.553 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-29 22:09:52.943 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-29 22:09:55.654 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-29 22:09:55.654 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-29 22:11:43.554 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-29 22:11:43.678 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-29 22:11:43.717 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-29 22:11:45.331 [main] WARN  pages.LoginPage - can not add text to element : By.id: ap_password org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.115)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.4.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [90e2f5f8fa35e9a1cb210b7f46b38053, findElement {value=ap_password, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63963/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 90e2f5f8fa35e9a1cb210b7f46b38053
+2025-04-29 22:11:45.334 [main] WARN  pages.LoginPage - can not click the element : By.id: signInSubmit org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.115)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.4.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [90e2f5f8fa35e9a1cb210b7f46b38053, findElement {value=signInSubmit, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /var/folders/73/ydsvnf9s3bn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63963/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 90e2f5f8fa35e9a1cb210b7f46b38053
+2025-04-29 22:11:45.334 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-29 22:22:48.591 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-29 22:22:50.780 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-29 22:22:50.818 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-29 22:22:52.711 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-29 22:22:52.768 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-29 22:22:52.769 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-29 22:24:02.237 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-29 22:24:03.569 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-29 22:24:03.609 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-29 22:24:05.329 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-29 22:24:05.378 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-29 22:24:05.378 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-29 22:24:05.396 [main] INFO  tests.LoginTest - https://www.amazon.eg/ax/claim?arb=1eeeac4f-fec8-42a3-8131-019efcc0219e&openid.assoc_handle=egflex&openid.mode=checkid_setup&policy_handle=Retail-Checkout&openid.return_to=https%3A%2F%2Fwww.amazon.eg%2F%3Fref_%3Dnav_ya_signin&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+2025-04-30 05:44:48.959 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-30 05:44:50.284 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-30 05:44:50.357 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-30 05:44:51.870 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-30 05:44:51.935 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-30 05:44:51.935 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-30 05:45:19.752 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-30 05:45:21.111 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-30 05:45:21.197 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-30 05:45:22.751 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-30 05:45:22.816 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-30 05:45:22.817 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-30 05:46:15.565 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-30 05:46:16.887 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-30 05:46:16.959 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-30 05:46:18.604 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-30 05:46:18.668 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-30 05:46:18.668 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-30 05:47:24.613 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-30 05:47:25.916 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-30 05:47:25.983 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-30 05:47:27.507 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-30 05:47:27.570 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-30 05:47:27.571 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-30 05:53:18.491 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-30 05:53:19.818 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-30 05:53:19.886 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-30 05:53:21.442 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-30 05:53:21.503 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-30 05:54:40.260 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-30 05:54:41.605 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-30 05:54:41.689 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-30 05:54:43.305 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-30 05:54:43.365 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-30 05:55:44.533 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-30 05:55:44.622 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-30 05:55:45.902 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-30 05:55:46.327 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-30 05:55:46.398 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-30 05:56:15.747 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-30 05:56:15.839 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-30 05:56:16.317 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-30 05:56:17.446 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-30 05:56:17.507 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-30 05:56:55.782 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-30 05:56:57.104 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-30 05:56:57.170 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-30 05:56:58.704 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-30 05:56:58.767 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-30 05:56:59.836 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-30 05:58:05.554 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-30 05:58:06.888 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-30 05:58:06.952 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-30 05:58:08.498 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-30 05:58:08.563 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-30 05:58:08.563 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-30 05:59:22.236 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-30 05:59:23.585 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-30 05:59:23.654 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-30 05:59:25.241 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-30 05:59:25.299 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-30 05:59:26.361 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears

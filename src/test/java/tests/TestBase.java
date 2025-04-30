@@ -6,6 +6,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
@@ -15,6 +16,8 @@ import utils.ConfigReader;
 import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -69,7 +72,12 @@ public class TestBase {
             option.addArguments("--headless");
             option.setPageLoadStrategy(PageLoadStrategy.NONE);
             option.addArguments("window-size=2000,3000");
-            driver = new ChromeDriver(option);
+//            driver = new ChromeDriver(option);
+            try {
+                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),option);
+            } catch (MalformedURLException e) {
+                throw new RuntimeException(e);
+            }
         }
 //        driver.manage().window().maximize();
         driver.navigate().to("https://www.amazon.eg/");

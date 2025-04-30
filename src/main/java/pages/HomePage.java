@@ -35,6 +35,10 @@ public class HomePage extends PageBase{
     public void clickOnAllVideoGame(WebDriver driver){
         clickElement(driver,allVideoGamesButton);
     }
+    public boolean isAllMenuAppears(WebDriver driver){
+        waitBeforeInteract(driver,burgerMenuButton);
+        return driver.findElement((burgerMenuButton)).isDisplayed();
+    }
 
 
 }

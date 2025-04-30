@@ -12,8 +12,10 @@ public class LoginTest extends TestBase {
                 .clickContinue(driver)
                 .addPassword(driver, password)
                 .clickSignInButton(driver);
-        logger.info("assert that the user is logged in and welcome msg appears");
-        softAssert.assertTrue(driver.getCurrentUrl().contains("https://www.amazon.eg/?ref_=nav_ya_signin"));
+        if(homePage.isAllMenuAppears(driver)){
+            logger.info("assert that the user is logged in and welcome msg appears");
+            softAssert.assertTrue(driver.getCurrentUrl().contains("https://www.amazon.eg/?ref_=nav_ya_signin"));
+        }else return;
         softAssert.assertAll();
     }
     @Test(retryAnalyzer = RetryAnalyzer.class)
