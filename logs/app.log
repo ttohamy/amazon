@@ -453,3 +453,46 @@ Session ID: 90e2f5f8fa35e9a1cb210b7f46b38053
 2025-04-30 05:59:25.241 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
 2025-04-30 05:59:25.299 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
 2025-04-30 05:59:26.361 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears
+2025-04-30 06:19:31.614 [main] WARN  pages.HomePage - can not click the element : By.id: nav-link-accountList org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome-headless-shell=124.0.6367.78)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.4.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [119aa0e263ba13bb1d034295a417af15, findElement {using=id, value=nav-link-accountList}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33909}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.2:4444/sessio..., se:cdpVersion: 124.0.6367.78, se:vnc: ws://172.19.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 119aa0e263ba13bb1d034295a417af15
+2025-04-30 06:19:31.622 [main] WARN  pages.LoginPage - can not add text to element : By.name: email org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.4.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [119aa0e263ba13bb1d034295a417af15, findElement {using=name, value=email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33909}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.2:4444/sessio..., se:cdpVersion: 124.0.6367.78, se:vnc: ws://172.19.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 119aa0e263ba13bb1d034295a417af15
+2025-04-30 06:19:31.629 [main] WARN  pages.LoginPage - can not click the element : By.id: continue org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.4.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [119aa0e263ba13bb1d034295a417af15, findElement {using=id, value=continue}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33909}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.2:4444/sessio..., se:cdpVersion: 124.0.6367.78, se:vnc: ws://172.19.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 119aa0e263ba13bb1d034295a417af15
+2025-04-30 06:19:31.635 [main] WARN  pages.LoginPage - can not add text to element : By.id: ap_password org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.4.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [119aa0e263ba13bb1d034295a417af15, findElement {using=id, value=ap_password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33909}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.2:4444/sessio..., se:cdpVersion: 124.0.6367.78, se:vnc: ws://172.19.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 119aa0e263ba13bb1d034295a417af15
+2025-04-30 06:19:31.642 [main] WARN  pages.LoginPage - can not click the element : By.id: signInSubmit org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.4.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [119aa0e263ba13bb1d034295a417af15, findElement {using=id, value=signInSubmit}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33909}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.2:4444/sessio..., se:cdpVersion: 124.0.6367.78, se:vnc: ws://172.19.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 119aa0e263ba13bb1d034295a417af15
+2025-04-30 06:25:04.540 [main] INFO  pages.HomePage - clicking element : By.id: nav-link-accountList
+2025-04-30 06:25:05.893 [main] INFO  pages.LoginPage - adding text to field : By.name: email
+2025-04-30 06:25:05.964 [main] INFO  pages.LoginPage - clicking element : By.id: continue
+2025-04-30 06:25:07.520 [main] INFO  pages.LoginPage - adding text to field : By.id: ap_password
+2025-04-30 06:25:07.587 [main] INFO  pages.LoginPage - clicking element : By.id: signInSubmit
+2025-04-30 06:25:08.658 [main] INFO  tests.LoginTest - assert that the user is logged in and welcome msg appears

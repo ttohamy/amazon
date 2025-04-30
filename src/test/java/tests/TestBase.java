@@ -74,7 +74,7 @@ public class TestBase {
             option.addArguments("window-size=2000,3000");
 //            driver = new ChromeDriver(option);
             try {
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),option);
+                driver = new RemoteWebDriver(new URL("http://selenium-chrome:4444/wd/hub"),option);
             } catch (MalformedURLException e) {
                 throw new RuntimeException(e);
             }
